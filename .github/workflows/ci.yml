@@ -23,7 +23,6 @@ jobs:
     - name: Execute tests via PHPUnit
       env:
         DB_CONNECTION: sqlite
-        DB_DATABASE: :memory:
-      run: |
-        php artisan config:cache
+        DB_DATABASE: database/database.sqlite
+      run:
         vendor/bin/phpunit
