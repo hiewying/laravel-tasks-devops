@@ -24,46 +24,4 @@ class RegisterTest extends TestCase
         $response->assertResponseStatus(200);
     }
 
-    /**
-     * A valid user can be registered.
-     *
-     * @return void
-     */
-    public function testRegistersAValidUser()
-    {
-        // $user = factory(User::class)->make();
-
-        $response = $this->post('register', [
-            'name' => 'hello;',
-            'email' => 'hello@gmail.com',
-            'password' => 'password',
-            'password_confirmation' => 'password'
-        ]);
-
-        $response->assertResponseStatus(419);
-
-        // $this->assertAuthenticated();
-    }
-
-    /**
-     * An invalid user is not registered.
-     *
-     * @return void
-     */
-    public function testDoesNotRegisterAnInvalidUser()
-    {
-        // $user = factory(User::class)->make();
-
-        $response = $this->post('register', [
-            'name' => 'hello',
-            'email' => 'hello@gmail.com',
-            'password' => 'password',
-            'password_confirmation' => 'invalid'
-        ]);
-
-        // $response->assertSessionHasErrors();
-        $response->assertResponseStatus(419);
-
-        // $this->assertGuest();
-    }
 }
