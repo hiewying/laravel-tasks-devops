@@ -34,7 +34,7 @@ jobs:
     
 
   sonarCloudTrigger:
-    needs: job
+    needs: laravel-tests
     name: SonarCloud Trigger
     runs-on: ubuntu-latest
     steps:
