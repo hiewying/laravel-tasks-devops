@@ -26,11 +26,11 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run:
         vendor/bin/phpunit
-      - name: Archive code coverage results for SonarCloud
-      uses: actions/upload-artifact@v1
-      with:
-        name: code-coverage-report
-        path: bin
+    - name: Archive code coverage results for SonarCloud
+    uses: actions/upload-artifact@v1
+    with:
+      name: code-coverage-report
+      path: bin
     
 
   sonarCloudTrigger:
