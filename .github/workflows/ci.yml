@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: code-coverage-report
-        path: bin
+        path: ./.github/workflow/
     
 
   sonarCloudTrigger:
