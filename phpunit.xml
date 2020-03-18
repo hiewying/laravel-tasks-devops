@@ -33,6 +33,11 @@
     <logging>
     <log type="coverage-html" target="./codeCoverage/" lowUpperBound="35" highLowerBound="70"/>
     <log type="coverage-clover" target="./codeCoverage/codeCoverage.xml"/>
+    <log type="coverage-php" target="./codeCoverage/coverage.serialized"/>
+    <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+    <log type="junit" target="./codeCoverage/test.xml"/>
+    <log type="testdox-html" target="./codeCoverage/testdox.html"/>
+    <log type="testdox-text" target="./codeCoverage/testdox.txt"/>
   </logging>
 
 </phpunit>

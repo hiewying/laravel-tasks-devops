@@ -1,0 +1,516 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Controller.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\RouteServiceProvider.php' => 
+  array (
+    28 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    38 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    40 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    43 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    54 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    55 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    56 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    57 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    68 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    69 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    70 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    71 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    72 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\RedirectIfAuthenticated.php' => 
+  array (
+    20 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+    ),
+    21 => 
+    array (
+    ),
+    24 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+    ),
+    25 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\BroadcastServiceProvider.php' => 
+  array (
+    17 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Task.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Exceptions\\Handler.php' => 
+  array (
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => NULL,
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    64 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\IsAdmin.php' => 
+  array (
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\TaskController.php' => 
+  array (
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => NULL,
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => NULL,
+    37 => 
+    array (
+    ),
+    38 => NULL,
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => NULL,
+    50 => 
+    array (
+    ),
+    51 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\ForgotPasswordController.php' => 
+  array (
+    30 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+    ),
+    31 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\AdminController.php' => 
+  array (
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\HomeController.php' => 
+  array (
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\EncryptCookies.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\AuthServiceProvider.php' => 
+  array (
+    26 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Repositories\\Repository.php' => 
+  array (
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => NULL,
+    25 => 
+    array (
+    ),
+    26 => NULL,
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => NULL,
+    38 => 
+    array (
+    ),
+    39 => NULL,
+    44 => 
+    array (
+    ),
+    45 => NULL,
+    50 => 
+    array (
+    ),
+    51 => NULL,
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => NULL,
+    63 => 
+    array (
+    ),
+    64 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\EventServiceProvider.php' => 
+  array (
+    28 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    31 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Kernel.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Repositories\\RepositoryInterface.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\LoginController.php' => 
+  array (
+    37 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+    ),
+    38 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\VerifyCsrfToken.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\AppServiceProvider.php' => 
+  array (
+    17 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    27 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Console\\Kernel.php' => 
+  array (
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    38 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    39 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    40 => 
+    array (
+      0 => 'Tests\\Feature\\AuthTest::testLoginFormDisplayed',
+      1 => 'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm',
+      2 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+      3 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\TrimStrings.php' => 
+  array (
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\User.php' => 
+  array (
+    35 => 
+    array (
+    ),
+    36 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\RegisterController.php' => 
+  array (
+    39 => 
+    array (
+      0 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+    ),
+    40 => 
+    array (
+      0 => 'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed',
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    55 => NULL,
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    71 => NULL,
+  ),
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\ResetPasswordController.php' => 
+  array (
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => -1,
+  ),
+  'Tests\\Feature\\AuthTest::testLoginFormDisplayed' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\AuthTest::testDisplaysPasswordResetRequestForm' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\RegisterTest::testRegisterFormDisplayed' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Unit\\ExampleTest::testBasicTest' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Console\\Kernel.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Exceptions\\Handler.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\AdminController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\ForgotPasswordController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\LoginController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\RegisterController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Auth\\ResetPasswordController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\Controller.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\HomeController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Controllers\\TaskController.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Kernel.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\EncryptCookies.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\IsAdmin.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\RedirectIfAuthenticated.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\TrimStrings.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Http\\Middleware\\VerifyCsrfToken.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\AppServiceProvider.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\AuthServiceProvider.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\BroadcastServiceProvider.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\EventServiceProvider.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Providers\\RouteServiceProvider.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Repositories\\Repository.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Repositories\\RepositoryInterface.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\Task.php' => true,
+  'C:\\xampp\\htdocs\\devops\\laravel-vue-tasks\\app\\User.php' => true,
+));
+
+return $coverage;

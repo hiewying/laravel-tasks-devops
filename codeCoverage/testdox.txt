@@ -1,0 +1,10 @@
+Feature\Auth
+ [x] Login form displayed
+ [x] Displays password reset request form
+
+Feature\Register
+ [x] Register form displayed
+
+Unit\Example
+ [x] Basic test
+
