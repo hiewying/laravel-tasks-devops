@@ -28,7 +28,6 @@ jobs:
         vendor/bin/phpunit
 
   sonarCloudTrigger:
-    needs: build
     name: SonarCloud Trigger
     runs-on: ubuntu-latest
     steps:
@@ -46,7 +45,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   sonarCloudIntegrationTest:
-    needs: build
     name: Integration Test
     runs-on: ubuntu-latest
     steps:
