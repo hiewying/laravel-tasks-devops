@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="1.327162">
-    <testsuite name="Feature" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="1.153269">
-      <testsuite name="Tests\Feature\AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.818292">
-        <testcase name="testLoginFormDisplayed" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" line="15" assertions="1" time="0.493577"/>
-        <testcase name="testDisplaysPasswordResetRequestForm" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" line="22" assertions="1" time="0.324715"/>
+  <testsuite name="" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="1.173249">
+    <testsuite name="Feature" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="1.027526">
+      <testsuite name="Tests\Feature\AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.755292">
+        <testcase name="testLoginFormDisplayed" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" line="15" assertions="1" time="0.473574"/>
+        <testcase name="testDisplaysPasswordResetRequestForm" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\AuthTest.php" line="22" assertions="1" time="0.281718"/>
       </testsuite>
-      <testsuite name="Tests\Feature\RegisterTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\RegisterTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.334977">
-        <testcase name="testRegisterFormDisplayed" class="Tests\Feature\RegisterTest" classname="Tests.Feature.RegisterTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\RegisterTest.php" line="20" assertions="1" time="0.334977"/>
+      <testsuite name="Tests\Feature\RegisterTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\RegisterTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.272234">
+        <testcase name="testRegisterFormDisplayed" class="Tests\Feature\RegisterTest" classname="Tests.Feature.RegisterTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Feature\RegisterTest.php" line="20" assertions="1" time="0.272234"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.173893">
-      <testsuite name="Tests\Unit\ExampleTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.173893">
-        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Unit\ExampleTest.php" line="16" assertions="1" time="0.173893"/>
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.145723">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.145723">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="C:\xampp\htdocs\devops\laravel-vue-tasks\tests\Unit\ExampleTest.php" line="16" assertions="1" time="0.145723"/>
       </testsuite>
     </testsuite>
   </testsuite>
