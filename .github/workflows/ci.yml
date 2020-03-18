@@ -1,4 +1,4 @@
-name: Continuous Integration Laravel 6
+name: Continuous Integration Laravel
 on: [push]
 jobs:
   laravel-tests:
@@ -26,3 +26,14 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run:
         vendor/bin/phpunit
+
+  sonarCloudTrigger:
+    name: SonarCloud Trigger
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
