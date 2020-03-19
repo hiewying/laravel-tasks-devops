@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+if (\App::environment('development') || \App::environment('production')) {
+    \URL::forceScheme('https');
+    \URL::forceRootUrl('https://laravel-tasks-devops.herokuapp.com/');
+}
 
 Route::view('/', 'welcome');
 

@@ -12,6 +12,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+if (\App::environment('development') || \App::environment('production')) {
+    \URL::forceScheme('https');
+    \URL::forceRootUrl('https://laravel-tasks-devops.herokuapp.com/');
+}
 
 Route::resource('tasks', 'TaskController');
 
