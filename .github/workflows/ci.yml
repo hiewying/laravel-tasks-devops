@@ -38,7 +38,7 @@ jobs:
       - name: fix code coverage paths
         working-directory: ./coverage
         run: |
-          sed -i 's/\/home\/runner\/work\/laravel-tasks\/laravel-tasks\//\/github\/workspace\//g' codeCoverage/test.xml
+          sed -i 's/\/home\/runner\/work\/laravel-tasks\/laravel-tasks\//\/github\/workspace\//g' ./codeCoverage/test.xml
           sed -i 's/\/home\/runner\/work\/laravel-tasks\/laravel-tasks\//\/github\/workspace\//g' codeCoverage/codeCoverage.xml
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarcloud-github-action@master
