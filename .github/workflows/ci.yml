@@ -42,7 +42,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   slackNotification:
-    needs: sonarCloudTrigger
+    needs: laravel-tests
     name: Slack Notification
     runs-on: ubuntu-latest
     steps:
@@ -51,3 +51,23 @@ jobs:
       uses: rtCamp/action-slack-notify@v2.0.0
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+  herokuBuild:
+    needs: laravel-tests
+    name: Heroku Set Up
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Login to Heroku Container registry
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:login 
+    - name: Build and push
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web 
+    - name: Release
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web 
+      
