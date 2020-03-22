@@ -27,7 +27,6 @@ jobs:
       run:
         vendor/bin/phpunit
     
-
   sonarCloudTrigger:
     needs: laravel-tests
     name: SonarCloud Trigger
@@ -53,6 +52,19 @@ jobs:
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run: git push https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git origin/master:master
+
+  publishDockerImage:
+    needs: laravel-tests
+    name: Deploy to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.DOCKER_IMAGE }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
   slackNotification:
     needs: [laravel-tests, herokuBuild]
