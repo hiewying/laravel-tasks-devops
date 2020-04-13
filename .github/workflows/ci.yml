@@ -59,6 +59,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: Build image
+        run: |
+        php artisan config:clear
+        docker build -t hiewying/laravel-tasks-image .
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
