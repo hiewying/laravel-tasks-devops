@@ -68,9 +68,11 @@ jobs:
 
   deployAzureWebApp:
     needs: publishDockerImage
-    name: Deploy to azure web app
+    name: Azure Web App
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
+    - name: Deploy to azure web app
       uses: azure/webapps-container-deploy@v1
       with: 
         app-name: laravel-tasks-app
