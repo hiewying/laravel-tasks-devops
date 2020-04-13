@@ -58,15 +58,18 @@ jobs:
     name: Deploy to Docker Hub
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v1
+    - name: Login to docker hub
+      uses: actions-hub/docker/login@master
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build image
-      run: docker build -t hiewying/laravel-tasks-image .
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      run: docker build -t ${{ secrets.DOCKER_USERNAME_IMAGE }} .
+    - name: Push to docker hub 
+      uses: actions-hub/docker@master
       with:
-        name: ${{ secrets.DOCKER_USERNAME_IMAGE }}
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        args: push ${{ secrets.DOCKER_USERNAME_IMAGE }}
 
   deployAzureWebApp:
     needs: publishDockerImage
