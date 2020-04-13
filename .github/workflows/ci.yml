@@ -71,6 +71,7 @@ jobs:
     name: Azure Web App
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: Deploy to azure web app
       uses: azure/appservice-actions/webapp@master
       with: 
