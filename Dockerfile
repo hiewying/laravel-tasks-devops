@@ -11,7 +11,7 @@ ADD ./public /var/www/html
 WORKDIR /app 
 COPY . /app 
  
-CMD composer install --no-interaction 
+CMD composer install 
 CMD vendor/bin/phpunit 
 CMD php artisan serve --host=0.0.0.0 --port=8181 
  
