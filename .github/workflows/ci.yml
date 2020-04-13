@@ -68,11 +68,13 @@ jobs:
 
   deployAzureWebApp:
     needs: publishDockerImage
-    name: Ddeploy to azure web app
-    uses: azure/webapps-container-deploy@v1
-    with: 
-      app-name: laravel-tasks-app
-      publish-profile: ${{ secrets.azureWebAppPublishProfile }}    
+    name: Deploy to azure web app
+    runs-on: ubuntu-latest
+    steps:
+      uses: azure/webapps-container-deploy@v1
+      with: 
+        app-name: laravel-tasks-app
+        publish-profile: ${{ secrets.azureWebAppPublishProfile }}    
 
   slackNotification:
     needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp]
