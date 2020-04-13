@@ -66,8 +66,16 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
+  deployAzureWebApp:
+    needs: publishDockerImage
+    name: Ddeploy to azure web app
+    uses: azure/webapps-container-deploy@v1
+    with: 
+      app-name: laravel-tasks-app
+      publish-profile: ${{ secrets.azureWebAppPublishProfile }}    
+
   slackNotification:
-    needs: [laravel-tests, herokuBuild]
+    needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp]
     name: Slack Notification
     runs-on: ubuntu-latest
     steps:
