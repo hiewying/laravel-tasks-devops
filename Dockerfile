@@ -10,6 +10,9 @@ ADD ./public /var/www/html
  
 # WORKDIR /bootstrap 
 # COPY . /bootstrap 
+
+WORKDIR /
+COPY . /
  
 CMD composer install --no-interaction
 CMD vendor/bin/phpunit 
