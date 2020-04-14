@@ -9,10 +9,10 @@ ADD . /var/www
 ADD ./public /var/www/html
  
 WORKDIR /app 
-COPY ./composer.* /app/
-
-RUN composer install --no-dev --prefer-dist --optimize-autoloader && \
-    composer clear-cache
+COPY . /app 
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+ 
+CMD composer install --no-interaction
 CMD vendor/bin/phpunit 
 CMD php artisan serve --host=0.0.0.0 --port=8181 
  
