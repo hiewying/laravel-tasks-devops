@@ -8,9 +8,8 @@ RUN docker-php-ext-install sockets
 ADD . /var/www
 ADD ./public /var/www/html
  
-WORKDIR /app 
-COPY . /app 
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+# WORKDIR /bootstrap 
+# COPY . /bootstrap 
  
 CMD composer install --no-interaction
 CMD vendor/bin/phpunit 
