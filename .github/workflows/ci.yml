@@ -75,7 +75,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Deploy to azure web app
-      uses: azure/appservice-actions/webapp@master
+      uses: azure/webapps-deploy@v1
       with: 
         app-name: laravel-tasks-app
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}    
