@@ -8,13 +8,10 @@ RUN docker-php-ext-install sockets
 ADD . /var/www
 ADD ./public /var/www/html
  
-# WORKDIR /bootstrap 
-# COPY . /bootstrap 
-
-WORKDIR /
-COPY . /
+WORKDIR /app 
+COPY . /app 
  
-CMD composer install --no-interaction
+CMD composer install
 CMD vendor/bin/phpunit 
 CMD php artisan serve --host=0.0.0.0 --port=8181 
  
