@@ -87,7 +87,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Deploy to kubernetes
+    - name: Kubernetes set context
+      uses: azure/k8s-set-context@v1
+      with:
+        method: service-account
+        k8s-url: https://192.168.99.101:8443
+        k8s-secret: default-token-fbsd2
+      id: setcontext
+      name: Deploy to kubernetes
       uses: Azure/k8s-deploy@v1
       with:
         namespace: 'laravel-tasks-deployment'
@@ -96,7 +103,7 @@ jobs:
         images: 'docker.io/hiewying/laravel-tasks-image:latest'
 
   slackNotification:
-    needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp]
+    needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp, deployKubernetes]
     name: Slack Notification
     runs-on: ubuntu-latest
     steps:
