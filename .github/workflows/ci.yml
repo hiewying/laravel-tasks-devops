@@ -75,10 +75,25 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Deploy to azure web app
-      uses: azure/appservice-actions/webapp@master
+      # uses: azure/appservice-actions/webapp@master
+      uses: azure/webapps-deploy@v2
       with: 
         app-name: laravel-tasks-app
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}    
+
+  deployKubernetes:
+    needs: publishDockerImage
+    name: Kubernetes Cluster
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Deploy to kubernetes
+      uses: Azure/k8s-deploy@v1
+      with:
+        namespace: 'laravel-tasks-deployment'
+        manifests: |
+            minikube/deploy.yml
+        images: 'docker.io/hiewying/laravel-tasks-image:latest'
 
   slackNotification:
     needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp]

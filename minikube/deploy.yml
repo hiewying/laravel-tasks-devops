@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laravel-tasks-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laravel-tasks
+  template:
+    metadata:
+      labels:
+        app: laravel-tasks
+    spec:
+      containers:
+      - name: laravel-tasks
+        image: docker.io/hiewying/laravel-tasks-image:latest
+        ports:
+        - containerPort: 8181
+  
