@@ -105,7 +105,6 @@ jobs:
         namespace: 'laravel-tasks-deployment'
         manifests: |
             minikube/deploy.yml
-            minikube/secret.yml
         images: 'docker.io/hiewying/laravel-tasks-image:latest'
 
   slackNotification:
