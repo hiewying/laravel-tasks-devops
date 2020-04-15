@@ -90,10 +90,16 @@ jobs:
     - name: Kubernetes set context
       uses: azure/k8s-set-context@v1
       with:
-        method: service-account
-        k8s-url: https://192.168.99.101:8443
-        k8s-secret: default-token-fbsd2
+        method: kubeconfig
+        kubeconfig: ${{ secrets.kubeConfig }}  
+        context: minikube
       id: setcontext
+      # uses: azure/k8s-set-context@v1
+      # with:
+      #   method: service-account
+      #   k8s-url: https://192.168.99.101:8443
+      #   k8s-secret: default-token-fbsd2
+      # id: setcontext
     - name: Deploy to kubernetes
       uses: Azure/k8s-deploy@v1
       with:
