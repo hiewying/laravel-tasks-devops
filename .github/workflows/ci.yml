@@ -92,7 +92,6 @@ jobs:
       with:
         method: kubeconfig
         kubeconfig: ${{ secrets.kubeConfig }}  
-        context: minikube
       id: setcontext
       # uses: azure/k8s-set-context@v1
       # with:
