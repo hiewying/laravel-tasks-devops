@@ -75,7 +75,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Deploy to azure web app
-      # uses: azure/appservice-actions/webapp@master
       uses: azure/webapps-deploy@v2
       with: 
         app-name: laravel-tasks-app
@@ -96,8 +95,8 @@ jobs:
       uses: azure/k8s-set-context@v1
       with:
         method: service-account
-        k8s-url: https://192.168.99.101:8443
-        k8s-secret: ${{ secrets.secret }}
+        k8s-url: https://192.168.99.102:8443
+        k8s-secret: ${{ secrets.minikubeSecret }}
       id: setcontext
     - name: Deploy to kubernetes
       uses: Azure/k8s-deploy@v1
