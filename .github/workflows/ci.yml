@@ -86,19 +86,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Kubernetes set context
+    # - name: Kubernetes set context
+    #   uses: azure/k8s-set-context@v1
+    #   with:
+    #     method: kubeconfig
+    #     kubeconfig: ${{ secrets.kubeConfig }}  
+    #   id: setcontext
+
       uses: azure/k8s-set-context@v1
       with:
-        method: kubeconfig
-        kubeconfig: ${{ secrets.kubeConfig }}  
+        method: service-account
+        k8s-url: http://127.0.0.1:54065/
+        k8s-secret: ${{ secrets.minikubeSecret }}
       id: setcontext
-
-      # uses: azure/k8s-set-context@v1
-      # with:
-      #   method: service-account
-      #   k8s-url: https://192.168.99.102:8443
-      #   k8s-secret: ${{ secrets.minikubeSecret }}
-      # id: setcontext
 
     - name: Deploy to kubernetes
       uses: Azure/k8s-deploy@v1
