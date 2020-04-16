@@ -86,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    # - name: Kubernetes set context
+    - name: Kubernetes set context
     #   uses: azure/k8s-set-context@v1
     #   with:
     #     method: kubeconfig
