@@ -86,25 +86,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Kubernetes set context
-      uses: azure/k8s-set-context@v1
-      with:
-        method: kubeconfig
-        kubeconfig: ${{ secrets.kubeConfig }}  
-      id: setcontext
+    # - name: Kubernetes set context
+      # uses: azure/k8s-set-context@v1
+      # with:
+      #   method: kubeconfig
+      #   kubeconfig: ${{ secrets.kubeonfig }}  
+      # id: setcontext
+
       # uses: azure/k8s-set-context@v1
       # with:
       #   method: service-account
       #   k8s-url: https://192.168.99.102:8443
       #   k8s-secret: ${{ secrets.minikubeSecret }}
       # id: setcontext
-    - name: Deploy to kubernetes
-      uses: Azure/k8s-deploy@v1
+
+    # - name: Deploy to kubernetes
+    #   uses: Azure/k8s-deploy@v1
+    #   with:
+    #     namespace: 'laravel-tasks-deployment'
+    #     manifests: |
+    #         minikube/deploy.yml
+    #     images: 'docker.io/hiewying/laravel-tasks-image:latest'
+
+    - name: deploy to cluster
+      uses: steebchen/kubectl@master
+      env:
+        KUBE_CONFIG_DATA: ${{ secrets.kubeConfig }}
       with:
-        namespace: 'laravel-tasks-deployment'
-        manifests: |
-            minikube/deploy.yml
-        images: 'docker.io/hiewying/laravel-tasks-image:latest'
+        args: set image --record ${{ secrets.DOCKER_USERNAME_IMAGE }}
 
   slackNotification:
     needs: [laravel-tests, herokuBuild, publishDockerImage, deployAzureWebApp, deployKubernetes]
