@@ -17,6 +17,4 @@ spec:
         image: docker.io/hiewying/laravel-tasks-image:latest
         ports:
         - containerPort: 8181
-        - command:
-          - --anonymous-auth=false
   
