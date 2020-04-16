@@ -90,7 +90,7 @@ jobs:
       uses: azure/k8s-set-context@v1
       with:
         method: kubeconfig
-        kubeconfig: ${{ secrets.kubeConfig }}  
+        kubeconfig: ${{ secrets.kubeConfig2 }}  
         context: minikube
       id: setcontext
 
