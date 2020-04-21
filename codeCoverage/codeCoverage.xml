@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1584575140">
-  <project timestamp="1584575140">
+<coverage generated="1587219714">
+  <project timestamp="1587219714">
     <package name="App\Console">
       <file name="C:\xampp\htdocs\devops\laravel-vue-tasks\app\Console\Kernel.php">
         <class name="App\Console\Kernel" namespace="App\Console">
